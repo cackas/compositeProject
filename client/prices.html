@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav flex--row flex__center">
+                <a href="#" class="nav--logo"><img src="images/logo.png" alt=""></a>
+                <ul class="nav--menu flex--row flex__center roboto__light uppercase">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Рассрочка</a></li>
+                    <li><a href="#">Комплектация</a></li>
+                    <li><a href="#">Продукты</a></li>
+                </ul>
+                <ul class="nav--social flex--row">
+                    <li class="nav--fb"><a href="#"><img src="images/social/facebook.png" alt=""></a></li>
+                    <li class="nav--inst"><a href="#"><img src="images/social/instagram.png" alt=""></a></li>
+                    <li class="nav--in"><a href="#"><img src="images/social/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="gallery--title uppercase">Цены</div>
+            <div class="container margin__bottom-elem">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati sit dolor laudantium asperiores, aspernatur quasi illum, iusto nesciunt architecto nemo labore debitis, pariatur similique magni. Fuga, nulla. Animi officia explicabo eius delectus repudiandae autem tenetur, doloremque dolore sequi fugit praesentium provident maiores expedita similique incidunt ea deserunt omnis obcaecati?</p>
+            </div>
+            <form class="steps">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Project">
+                <input type="hidden" name="admin_email" value="vannigga@yandex.ru">
+                <input type="hidden" name="form_subject" value="Новый запрос">
+                <!-- END Hidden Required Fields -->
+                <div class="step step-1 flex--row margin__bottom-elem">
+                    <div class="step--descr flex--column">
+                        <div class="step--title uppercase">шаг <span>01</span> выберите параметры</div>
+                        <div class="step--form">
+                            <div class="input--title">Размер типового окна</div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="radio" name="size" value="1320x1430 Г+П/О (кухня)" id="size-1">
+                                <label class="label" for="size-1">1320x1430 Г+П/О (кухня)</label>
+                                <input class="radio-btn" type="radio" name="size" value="2080x1430 Г+П/О+Г (комната)" id="size-2">
+                                <label class="label" for="size-2">2080x1430 Г+П/О+Г (комната)</label>
+                                <input class="radio-btn" type="radio" name="size" value="2080x1430 П/О+Г+П/О (комната)" id="size-3">
+                                <label class="label" for="size-3">2080x1430 П/О+Г+П/О (комната)</label>
+                                <input class="radio-btn" type="radio" name="size" value="2070x2170 (балконный блок)" id="size-4">
+                                <label class="label" for="size-4">2070x2170 (балконный блок)</label>
+                            </div>
+                            <div class="input--title">Количество камер профиля</div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="radio" name="count" value="3" id="count-1">
+                                <label class="label label__checkbox" for="count-1">3</label>
+                                <input class="radio-btn" type="radio" name="count" value="4" id="count-2">
+                                <label class="label label__checkbox" for="count-2">4</label>
+                                <input class="radio-btn" type="radio" name="count" value="5" id="count-3">
+                                <label class="label label__checkbox" for="count-3">5</label>
+                                <input class="radio-btn" type="radio" name="count" value="6" id="count-4">
+                                <label class="label label__checkbox" for="count-4">6</label>
+                            </div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="checkbox" name="glass" value="да" id="glass">
+                                <label class="label__glass" for="glass">Энергосберегающий стеклопакет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step--img">
+                        <a class="case--popup" href="images/about.jpg">
+                            <img class="img__full" src="images/about.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="step step-2 flex--row flex--row-inverse margin__bottom-elem">
+                    <div class="step--descr flex--column">
+                        <div class="step--title uppercase">шаг <span>02</span> выберите комплектующие</div>
+                        <div class="step--form">
+                            <div class="input--title">Тип окна</div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="radio" name="window-type" value="Одностворчатое" id="window-type-1">
+                                <label class="label label__width" for="window-type-1">Одностворчатое</label>
+                                <input class="radio-btn" type="radio" name="window-type" value="Двухстворчатое" id="window-type-2">
+                                <label class="label label__width" for="window-type-2">Двухстворчатое</label>
+                                <input class="radio-btn" type="radio" name="window-type" value="Трехстворчатое" id="window-type-3">
+                                <label class="label label__width" for="window-type-3">Трехстворчатое</label>
+                                <input class="radio-btn" type="radio" name="window-type" value="Балконная дверь" id="window-type-4">
+                                <label class="label label__width" for="window-type-4">Балконная дверь</label>
+                            </div>
+                            <div class="input--title">Тип дома</div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="radio" name="house" value="Панельный" id="house-1">
+                                <label class="label label__checkbox label__width" for="house-1">Панельный</label>
+                                <input class="radio-btn" type="radio" name="house" value="Кирпичный" id="house-2">
+                                <label class="label label__checkbox label__width" for="house-2">Кирпичный</label>
+                                <input class="radio-btn" type="radio" name="house" value="Газосиликатный блок" id="house-3">
+                                <label class="label label__checkbox label__width" for="house-3">Газосиликатный блок</label>
+                                <input class="radio-btn" type="radio" name="house" value="Деревянный" id="house-4">
+                                <label class="label label__checkbox label__width" for="house-4">Деревянный</label>
+                            </div>
+                            <div class="step--inputs flex--row">
+                                <input class="radio-btn" type="checkbox" name="Монтаж" value="да" id="mont">
+                                <label class="label__glass" for="mont">Монтаж</label>
+                                <input class="radio-btn" type="checkbox" name="Москитная сетка" value="да" id="moskit">
+                                <label class="label__glass" for="moskit">Москитная сетка</label>
+                                <input class="radio-btn" type="checkbox" name="Теплые откосы" value="да" id="otkos">
+                                <label class="label__glass" for="otkos">Теплые откосы</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step--img">
+                        <a class="case--popup" href="images/about.jpg">
+                            <img class="img__full" src="images/about.jpg" alt="">
+                        </a>
+                    </div>
+                </div>                
+                <div class="step step-3 flex--row margin__bottom-elem">
+                        <div class="step--descr flex--column">
+                            <div class="step--title uppercase">шаг <span>03</span> закажите рассчет стоимости</div>
+                            <div class="step--form">
+                                <input class="form--input form__width" type="tel" name="tel" placeholder="Телефон" required pattern="+[0-9]{1,}">
+                                <div class="input-wrap">
+                                    <input class="form--sbm" type="submit" value="Рассчитать стоимость">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step--img">
+                            <a class="case--popup" href="images/about.jpg">
+                                <img class="img__full" src="images/about.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer--bott flex--row flex__center uppercase">
+            <a href="#" class="download-btn flex--row flex__center"><p>Скачать прайс</p><img src="images/download.png" alt=""></a>
+            <ul class="nav--social flex--row flex__center">
+                <p class="nav--descr">Будьте с нами</p>
+                <li class="nav--fb"><a href="#"><img src="images/social/facebook-white.png" alt=""></a></li>
+                <li class="nav--inst"><a href="#"><img src="images/social/instagram-white.png" alt=""></a></li>
+                <li class="nav--in"><a href="#"><img src="images/social/linkedin-white.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

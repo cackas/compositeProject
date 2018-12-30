@@ -1,0 +1,580 @@
+@import "fonts"
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  box-sizing: border-box
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+html
+  font-size: 10px
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0   
+a, a:hover, a:active
+  text-decoration: none
+  color: #000 
+//font classes
+.roboto__light
+  font-family: 'RobotoLight'
+.uppercase
+  text-transform: uppercase
+//styles
+.container
+  padding: 0 7.29vw
+.home-bg
+  background: url('../images/bg/header-bg.jpg') no-repeat
+  background-size: 100% 100%
+.flex--row
+  display: flex
+  flex-direction: row
+.flex--row-inverse
+  flex-direction: row-reverse
+.flex--column
+  display: flex
+  flex-direction: column
+.flex__center
+  justify-content: space-between
+  align-items: center
+.margin__bottom
+  margin-bottom: 8.6vw
+.margin__bottom-elem
+  margin-bottom: 4vw
+.text
+  font-family: 'RobotoLight'
+  font-size: 1.6rem
+  line-height: 2rem
+  text-align: justify
+  margin-bottom: 2rem
+.img__full
+  width: 100%
+//header
+header
+  position: relative
+.nav
+  padding: 1.875vw 0
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    left: 0
+    top: 100%
+    width: 100%
+    height: 1px
+    background-color: #F83434
+.nav--logo
+  margin-right: 5vw
+.nav--menu
+  font-size: 1.4rem
+  position: relative
+  width: 100%
+  justify-content: flex-start
+  flex-wrap: wrap
+  li
+    margin-right: 1.875vw
+    &:last-child
+      margin-right: 0
+.nav--social
+  li
+    margin-right: .52vw
+    &:last-child
+      margin-right: 0
+.nav--fb img
+  width: .75rem
+  height: 1.5rem
+.nav--inst img
+  width: 1.5rem
+  height: 1.5rem
+.nav--in img
+  width: 1.5rem
+  height: 1.5rem
+.nav--descr
+  margin-right: 8.4rem
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    left: calc(100% + 2.5rem)
+    top: 50%
+    width: 4.4rem
+    height: 1px
+    background-color: #fff
+.site
+  padding: 12.7vw 0 15.6vw
+  text-align: center
+.site--name
+  font-family: 'RobotoBold'
+  font-size: 5.7rem
+  line-height: 7.6rem
+  margin-bottom: .8rem
+  letter-spacing: .1rem
+.site--descr
+  font-family: 'RobotoMedium'
+  font-size: 1.8rem
+  line-height: 2.4rem
+  letter-spacing: .1rem
+.scroll-btn
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 3.7rem
+  background-color: #F83434
+  color: #fff
+  font-family: 'Roboto'
+  font-size: 1.3rem
+  line-height: 2.4rem
+  padding: 6.9vw 0 5.4vw
+  &:hover
+    color: #fff
+  p
+    transform: rotate(90deg)
+    margin-bottom: 7.5rem
+    letter-spacing: .1rem
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 130%
+      top: 50%
+      width: 3.3rem
+      height: 1px
+      background-color: #fff
+  img
+    width: 2.6rem
+    height: 2.6rem
+//Footer
+.footer--bott
+  font-family: 'RobotoLight'
+  font-size: 1.6rem
+  letter-spacing: .1rem
+  color: #fff
+  background-color: #202126
+  padding: 1.25vw 2vw
+  flex-wrap: wrap
+.download-btn
+  color: #fff
+  p
+    margin-right: 1.4rem
+  img
+    width: 1.5rem
+    height: 1.7rem
+.footer--top
+  margin-bottom: 2.6vw
+.map
+  width: 50%
+  height: 50%
+  border: 1px solid #707070
+  iframe
+    width: 100%
+    height: 100%
+.request
+  width: 50%
+  padding-left: 14.3vw
+.form
+  width: 50%
+  padding: 4.68vw 7.29vw
+  align-items: flex-start
+.form--title
+  font-family: 'RobotoBold'
+  font-size: 2.5rem
+  line-height: 3.3rem
+  margin-bottom: 1.3vw
+.form--descr
+  font-family: 'Roboto'
+  font-size: 1.6rem
+  line-height: 2rem
+  margin-bottom: 1.3vw
+.form--input
+  width: 100%
+  border-radius: 1.5rem
+  border: 1px solid #202126
+  padding: 1.6rem 2.5rem
+  margin-bottom: 2rem
+  font-family: 'MontserratMedium'
+  font-size: 1.2rem
+  text-transform: uppercase
+.form__width
+  width: 35vw
+  margin-bottom: 2.3vw
+.form--textarea
+  margin-bottom: 1.3vw
+.input-wrap
+  align-self: flex-end
+  position: relative
+  width: fit-content
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    width: 1.09rem
+    height: .819rem
+    background-image: url('../images/right-red.png')
+    transform: translate(0, -50%)
+.form--sbm
+  font-family: 'Roboto'
+  padding: 0
+  font-size: 1.6rem
+  border: none
+  background-color: inherit
+  margin-right: 2.7rem
+//Page content
+.content
+  padding: 5.4vw 0
+.page--title
+  font-family: 'Roboto'
+  font-size: 2.5rem
+  line-height: 3.3rem
+  margin-bottom: 7.5rem
+.page--descr
+  font-family: 'RobotoLight'
+  font-size: 1.6rem
+  line-height: 2rem
+.gallery--title
+  font-family: 'Roboto'
+  font-size: 2.5rem
+  line-height: 3.6rem
+  margin-bottom: 3.4vw
+  position: relative
+  color: #202126
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: calc(100% + 2.5rem)
+    width: 2.6rem
+    height: .3rem
+    min-height: 1px
+    background-color: #F83434
+.request--title
+  font-family: 'MontserratBold'
+  font-size: 2rem
+  line-height: 2.7rem
+  position: relative
+  right: 4.5vw
+.gallery
+  align-items: flex-start
+  flex-wrap: wrap
+.case
+  align-items: flex-end
+  &>a
+    width: 100%
+  &:nth-child(1)
+    width: 49.5vw
+  &:nth-child(2)
+    width: 28.9vw
+    margin-bottom: 5.73vw
+  &:nth-child(3)
+    width: 35.9vw
+  &:nth-child(4)
+    width: 42.7vw
+.gallery-wrap__works .case
+  width: 35.9vw
+  margin-bottom: 5.73vw
+  &:nth-child(2n)
+    width: 42.2vw
+  &:last-child
+    margin-bottom: 0
+.case__uneven
+  margin-right: 6.77vw
+.case__even
+  display: flex
+  flex-direction: column-reverse
+.case--img
+  width: 100%
+.case--descr
+  padding: 4.68vw 0 6.25vw 7.29vw
+  position: relative
+  font-family: 'Roboto'
+  a
+    align-self: flex-end
+.case--number
+  position: absolute
+  top: 0
+  left: 0
+  transform: translate(0, -50%)
+  font-size: 6rem
+  color: #F83434
+.case--title
+  font-size: 1.6rem
+  line-height: 2.1rem
+  margin-bottom: 2.3rem
+  color: #202020
+.case--text
+  font-size: 1.4rem
+  line-height: 2rem
+  margin-bottom: 2.3rem
+  color: #717171
+.works-wrap
+  flex-wrap: wrap
+.works
+  width: 35rem
+.works--title
+  font-family: 'Roboto'
+  font-size: 2.5rem
+  line-height: 3.3rem
+  margin-bottom: 2.3rem
+  color: #202126
+.works--descr
+  font-family: 'RobotoLight'
+  font-size: 1.6rem
+  line-height: 2rem
+  margin-bottom: 2.3rem
+  color: #717171
+.works--btn
+  align-self: flex-end
+  font-family: 'Roboto'
+  font-size: 1.6rem
+  line-height: 2.8rem
+  color: #202126
+  position: relative
+  padding-right: 2.7rem
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    width: 1.09rem
+    height: .819rem
+    background-image: url('../images/right-red.png')
+    transform: translate(0, -50%)
+.slides
+  padding: 3.125vw 0
+  width: 60.9vw
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 27.2rem
+    height: .5rem
+    background-color: #F83434
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 27.2rem
+    height: .5rem
+    background-color: #F83434
+.slides__project
+  padding: 3.125vw 0
+.slides-wrap__gallery
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 27.2rem
+    height: .5rem
+    background-color: #F83434
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 27.2rem
+    height: .5rem
+    background-color: #F83434
+.slide
+  width: 27.2rem
+  height: fit-content
+  padding: 2.7rem 1.4rem
+  border-radius: 1.3rem
+  background-image: url('../images/bg/slider.jpg')
+  background-size: 100% 100%
+  color: #fff
+  margin-right: 2rem
+  overflow: hidden
+  &:last-child
+    margin-right: 0
+.slide__no-padd
+  padding: 0
+.slide--title
+  font-family: 'Roboto'
+  font-size: 1.6rem
+  line-height: 2rem
+  margin-bottom: 8.4rem
+.slide--descr
+  font-family: 'RobotoLight'
+  font-size: 1.6rem
+  line-height: 2rem
+.slide--btn
+  font-family: 'MontserratSemiBold'
+  color: #fff
+  font-size: 1.6rem
+  line-height: 2.8rem
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 108%
+    width: 1.09rem
+    height: .819rem
+    background-image: url('../images/right-red.png')
+    transform: translate(0, -50%)
+//About
+.video-wrap
+  padding: 1.56vw 0 3vw
+.video
+  width: 50%
+  iframe
+    width: 100%
+    height: 100%
+.video__height
+  height: 21vw
+.video--descr
+  width: 50%
+  padding-left: 6.77vw
+.video--descr-inverse
+  padding-left: 0
+  padding-right: 6.77vw
+.gallery--btn
+  position: absolute
+  top: 0
+  left: 32rem
+  transform: translate(0, -50%)
+  font-family: 'Roboto'
+  font-size: 1.6rem
+  line-height: 2.8rem
+  letter-spacing: .2rem
+  color: #F83434
+  padding-right: 2.7rem
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    width: 1.09rem
+    height: .819rem
+    background-image: url('../images/right-red.png')
+    transform: translate(0, -50%)
+.step
+  align-items: center
+.step-1
+  justify-content: flex-end
+  .step--title
+    align-self: flex-start
+.step-2
+  justify-content: flex-start
+  .step--form
+    align-self: flex-start
+    margin-left: 3.5rem
+.step-3
+  justify-content: space-between
+  .step--descr
+    align-items: flex-start
+.step--title
+  font-family: 'Roboto'
+  font-size: 1.6rem
+  line-height: 2.1rem
+  color: #202126
+  transform: translateY(-50%)
+  span
+    color: #F83434
+    font-size: 6rem
+    line-height: 8rem
+    margin: 0 1.6rem
+.step--descr
+  width: 59%
+  align-items: flex-end
+.step--img
+  width: 41%
+.input--title
+  font-family: 'RobotoLight'
+  font-size: 2.5rem
+  line-height: 3.3rem
+  margin-bottom: 1.4vw
+.step--inputs
+  margin-bottom: 2.1vw
+  flex-wrap: wrap
+.label
+  border-radius: 2rem
+  border: .1rem solid #F83434
+  padding: 1.7rem 1.2rem
+  font-family: 'RobotoLight'
+  font-size: 1.2rem
+  line-height: 1.6rem
+  color: #202126
+  margin-right: 1.7rem
+.label__checkbox
+  padding: 1.7rem 2.4rem
+.label__width
+  width: 17.5rem
+  text-align: center
+.radio-btn
+  display: none
+.radio-btn:checked + .label
+  background-color: #F83434
+  color: #fff
+.label__glass
+  font-family: 'RobotoLight'
+  font-size: 2.5rem
+  line-height: 3.3rem
+  margin-right: 6rem
+.label__glass:before
+  content: " "
+  color: #F83434
+  display: inline-block
+  margin-right: 1.5rem
+  position: relative
+  text-align: center
+  text-indent: 0px
+  width: 2.6rem
+  height: 2.6rem
+  border-radius: .7rem
+  background: #FFF
+  border: .1rem solid #F83434
+  border-image: initial
+  vertical-align: middle
+
+.radio-btn
+  &:checked + .label__glass:before
+    background-image: url('../images/check.png')
+    background-size: 100% 100%
+//Popup
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
+
+@import "media"
