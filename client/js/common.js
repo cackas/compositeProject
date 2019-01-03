@@ -35,7 +35,7 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 550,
+            breakpoint: 773,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -73,7 +73,7 @@ $(document).ready(function() {
           }
         },
         {
-          breakpoint: 550,
+          breakpoint: 769,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -81,8 +81,8 @@ $(document).ready(function() {
         }
       ]
   });
-    //Popup
 
+  //Popup
 	$('.case--popup').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
@@ -96,5 +96,32 @@ $(document).ready(function() {
 			enabled: true,
 			duration: 300 // don't foget to change the duration also in CSS
 		}
-	});
+  });
+  
+  //Complects page
+  $('.complect').click(function(){ 
+    $(this).toggleClass('active');
+    $(this).children('.complect--descr').fadeToggle();
+    $(this).children('.complect--ball').toggleClass('active');
+  })
+
+  //Кнопка адаптивного меню
+      var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+      for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+      };
+
+      function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+          e.preventDefault();
+          (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+      });
+      }
+  
+    $('.cmn-toggle-switch').on('click', function() {
+      $('.nav--menu').toggleClass('active');
+      $('header .nav--social').toggleClass('active');
+    });
 });
